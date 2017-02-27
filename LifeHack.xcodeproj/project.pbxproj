@@ -18,6 +18,8 @@
 		E29094481E63A3AC008F94D4 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094471E63A3AC008F94D4 /* TodoViewController.swift */; };
 		E290944D1E63A84D008F94D4 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290944C1E63A84D008F94D4 /* Todo.swift */; };
 		E29094521E63A928008F94D4 /* TodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094511E63A928008F94D4 /* TodoRepository.swift */; };
+		E29094541E63C7A3008F94D4 /* TodoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094531E63C7A3008F94D4 /* TodoPresenter.swift */; };
+		E29094571E63C945008F94D4 /* TodoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094561E63C945008F94D4 /* TodoUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		E29094471E63A3AC008F94D4 /* TodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		E290944C1E63A84D008F94D4 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		E29094511E63A928008F94D4 /* TodoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoRepository.swift; sourceTree = "<group>"; };
+		E29094531E63C7A3008F94D4 /* TodoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoPresenter.swift; sourceTree = "<group>"; };
+		E29094561E63C945008F94D4 /* TodoUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		E29094141E63A10B008F94D4 /* LifeHack */ = {
 			isa = PBXGroup;
 			children = (
+				E29094551E63C921008F94D4 /* usecase */,
 				E290944F1E63A8EA008F94D4 /* presentation */,
 				E290944E1E63A8E3008F94D4 /* Infra */,
 				E290944A1E63A824008F94D4 /* domain */,
@@ -141,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				E29094471E63A3AC008F94D4 /* TodoViewController.swift */,
+				E29094531E63C7A3008F94D4 /* TodoPresenter.swift */,
 			);
 			name = todo;
 			sourceTree = "<group>";
@@ -199,6 +205,14 @@
 				E29094511E63A928008F94D4 /* TodoRepository.swift */,
 			);
 			name = repository;
+			sourceTree = "<group>";
+		};
+		E29094551E63C921008F94D4 /* usecase */ = {
+			isa = PBXGroup;
+			children = (
+				E29094561E63C945008F94D4 /* TodoUseCase.swift */,
+			);
+			name = usecase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +355,8 @@
 				E29094481E63A3AC008F94D4 /* TodoViewController.swift in Sources */,
 				E29094181E63A10B008F94D4 /* ViewController.swift in Sources */,
 				E29094161E63A10B008F94D4 /* AppDelegate.swift in Sources */,
+				E29094571E63C945008F94D4 /* TodoUseCase.swift in Sources */,
+				E29094541E63C7A3008F94D4 /* TodoPresenter.swift in Sources */,
 				E29094461E63A39A008F94D4 /* AlarmViewController.swift in Sources */,
 				E290944D1E63A84D008F94D4 /* Todo.swift in Sources */,
 				E29094521E63A928008F94D4 /* TodoRepository.swift in Sources */,
@@ -592,6 +608,7 @@
 				E290943C1E63A10C008F94D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E290943D1E63A10C008F94D4 /* Build configuration list for PBXNativeTarget "LifeHackTests" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +617,7 @@
 				E290943F1E63A10C008F94D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E29094401E63A10C008F94D4 /* Build configuration list for PBXNativeTarget "LifeHackUITests" */ = {
 			isa = XCConfigurationList;
@@ -608,6 +626,7 @@
 				E29094421E63A10C008F94D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

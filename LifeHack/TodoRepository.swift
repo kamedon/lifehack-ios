@@ -8,6 +8,12 @@
 
 import Foundation
 
-class TodoRepository {
-    
+protocol TodoRepositoryProtocol {
+    func all() -> [Todo]
+}
+
+class TodoRepository  : TodoRepositoryProtocol{
+    func all() -> [Todo] {
+        return [Todo(body: "bodybodybody"),Todo(body: "bodybodybody")]
+    }
 }
