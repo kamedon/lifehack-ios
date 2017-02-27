@@ -14,6 +14,8 @@
 		E29094201E63A10C008F94D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E290941E1E63A10C008F94D4 /* LaunchScreen.storyboard */; };
 		E290942B1E63A10C008F94D4 /* LifeHackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290942A1E63A10C008F94D4 /* LifeHackTests.swift */; };
 		E29094361E63A10C008F94D4 /* LifeHackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094351E63A10C008F94D4 /* LifeHackUITests.swift */; };
+		E29094461E63A39A008F94D4 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094451E63A39A008F94D4 /* AlarmViewController.swift */; };
+		E29094481E63A3AC008F94D4 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094471E63A3AC008F94D4 /* TodoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		E29094311E63A10C008F94D4 /* LifeHackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeHackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29094351E63A10C008F94D4 /* LifeHackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeHackUITests.swift; sourceTree = "<group>"; };
 		E29094371E63A10C008F94D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E29094451E63A39A008F94D4 /* AlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		E29094471E63A3AC008F94D4 /* TodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		E29094141E63A10B008F94D4 /* LifeHack */ = {
 			isa = PBXGroup;
 			children = (
+				E29094441E63A368008F94D4 /* alarm */,
+				E29094431E63A359008F94D4 /* todo */,
 				E29094151E63A10B008F94D4 /* AppDelegate.swift */,
 				E29094171E63A10B008F94D4 /* ViewController.swift */,
 				E29094191E63A10C008F94D4 /* Main.storyboard */,
@@ -123,6 +129,22 @@
 				E29094371E63A10C008F94D4 /* Info.plist */,
 			);
 			path = LifeHackUITests;
+			sourceTree = "<group>";
+		};
+		E29094431E63A359008F94D4 /* todo */ = {
+			isa = PBXGroup;
+			children = (
+				E29094471E63A3AC008F94D4 /* TodoViewController.swift */,
+			);
+			name = todo;
+			sourceTree = "<group>";
+		};
+		E29094441E63A368008F94D4 /* alarm */ = {
+			isa = PBXGroup;
+			children = (
+				E29094451E63A39A008F94D4 /* AlarmViewController.swift */,
+			);
+			name = alarm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29094481E63A3AC008F94D4 /* TodoViewController.swift in Sources */,
 				E29094181E63A10B008F94D4 /* ViewController.swift in Sources */,
 				E29094161E63A10B008F94D4 /* AppDelegate.swift in Sources */,
+				E29094461E63A39A008F94D4 /* AlarmViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
