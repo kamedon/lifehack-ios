@@ -20,6 +20,7 @@
 		E29094521E63A928008F94D4 /* TodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094511E63A928008F94D4 /* TodoRepository.swift */; };
 		E29094541E63C7A3008F94D4 /* TodoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094531E63C7A3008F94D4 /* TodoPresenter.swift */; };
 		E29094571E63C945008F94D4 /* TodoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094561E63C945008F94D4 /* TodoUseCase.swift */; };
+		E290945A1E6454E9008F94D4 /* TodoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094591E6454E9008F94D4 /* TodoTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		E29094511E63A928008F94D4 /* TodoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoRepository.swift; sourceTree = "<group>"; };
 		E29094531E63C7A3008F94D4 /* TodoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoPresenter.swift; sourceTree = "<group>"; };
 		E29094561E63C945008F94D4 /* TodoUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoUseCase.swift; sourceTree = "<group>"; };
+		E29094591E6454E9008F94D4 /* TodoTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 		E29094491E63A80C008F94D4 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				E29094581E6454DD008F94D4 /* view */,
 				E29094441E63A368008F94D4 /* alarm */,
 				E29094431E63A359008F94D4 /* todo */,
 			);
@@ -213,6 +216,14 @@
 				E29094561E63C945008F94D4 /* TodoUseCase.swift */,
 			);
 			name = usecase;
+			sourceTree = "<group>";
+		};
+		E29094581E6454DD008F94D4 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E29094591E6454E9008F94D4 /* TodoTableCell.swift */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +369,7 @@
 				E29094571E63C945008F94D4 /* TodoUseCase.swift in Sources */,
 				E29094541E63C7A3008F94D4 /* TodoPresenter.swift in Sources */,
 				E29094461E63A39A008F94D4 /* AlarmViewController.swift in Sources */,
+				E290945A1E6454E9008F94D4 /* TodoTableCell.swift in Sources */,
 				E290944D1E63A84D008F94D4 /* Todo.swift in Sources */,
 				E29094521E63A928008F94D4 /* TodoRepository.swift in Sources */,
 			);
