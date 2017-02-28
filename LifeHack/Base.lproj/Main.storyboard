@@ -38,7 +38,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="Pzl-V5-Mbb"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button"/>
+                                                    <state key="normal" title="完了"/>
                                                 </button>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4T4-PR-HV0">
                                                     <rect key="frame" x="0.0" y="0.0" width="263" height="43.5"/>
@@ -57,6 +57,10 @@
                                                 <constraint firstAttribute="bottom" secondItem="4T4-PR-HV0" secondAttribute="bottom" id="zca-i9-QD6"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bodyText" destination="4T4-PR-HV0" id="dxi-HM-D6j"/>
+                                            <outlet property="btnComplate" destination="DU6-3a-MRY" id="ryD-m8-BXF"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>

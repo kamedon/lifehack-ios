@@ -33,7 +33,8 @@ class TodoPresenter: NSObject, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ table: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = table.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath)
+        let cell = table.dequeueReusableCell(withIdentifier: "todoCell", for: indexPath) as! TodoTableCell
+        cell.bodyText.text = todoList[indexPath.row].body
         return cell
     }
 }

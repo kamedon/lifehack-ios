@@ -11,4 +11,7 @@ import UIKit
 
 class TodoTableCell: UITableViewCell {
     
+    @IBOutlet weak var bodyText: UITextField!
+    @IBOutlet weak var btnComplate: UIButton!
+
 }

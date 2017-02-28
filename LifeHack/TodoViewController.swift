@@ -19,6 +19,7 @@ class TodoViewController: UIViewController, TodoView {
         presenter = TodoPresenter(view: self, useCase: TodoUseCase(repository: TodoRepository()))
         presenter.load()
         tableView.delegate = presenter
+        tableView.dataSource = presenter
         
         // Do any additional setup after loading the view.
     }
