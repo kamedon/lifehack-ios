@@ -8,11 +8,17 @@
 
 import UIKit
 
-class TodoViewController: UIViewController {
+class TodoViewController: UIViewController, TodoView {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var presenter : TodoPresenter!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        presenter = TodoPresenter(view: self, useCase: TodoUseCase(repository: TodoRepository()))
+        presenter.bindTodoTableView(tableView)
+        presenter.load()
         // Do any additional setup after loading the view.
     }
 
