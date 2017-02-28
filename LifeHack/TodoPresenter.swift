@@ -25,7 +25,7 @@ class TodoPresenter: NSObject, UITableViewDataSource, UITableViewDelegate {
         self.view = view
     }
     
-    func bindTodoTableView(_ tableView: UITableView) {
+    func bind(_ tableView: UITableView) {
         self.tableView = tableView
         tableView.delegate = self
         tableView.dataSource = self
@@ -33,6 +33,7 @@ class TodoPresenter: NSObject, UITableViewDataSource, UITableViewDelegate {
     
     func load() {
         todoList = useCase.list()
+        todoList.insert(Todo(body: ""), at: 0)
         tableView.reloadData()
     }
     
@@ -42,10 +43,16 @@ class TodoPresenter: NSObject, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ table: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: "todoCell", for: indexPath) as! TodoTableCell
-        cell.bodyText.text = todoList[indexPath.row].body
-        cell.onComplete = {
+        var todo = todoList[indexPath.row]
+       
+        cell.bodyText.text = todo.body
+        cell.onComplete = { sender in
             self.todoList.remove(at: indexPath.row)
             table.reloadData()
+        }
+        cell.onBodyEditingDidEnd = { sender in
+            todo.body = sender.text!
+            self.useCase.save(todo)
         }
         return cell
     }

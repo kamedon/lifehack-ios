@@ -18,4 +18,9 @@ class TodoUseCase {
     func list() -> [Todo] {
         return repository.all()
     }
+    
+    func save(_ todo: Todo) {
+        repository.save(todo)
+    }
+    
 }

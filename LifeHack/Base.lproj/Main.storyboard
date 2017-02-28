@@ -48,6 +48,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="bodyEditingDidEnd:" destination="fde-1z-yR0" eventType="editingDidEnd" id="ru5-Zg-edg"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>

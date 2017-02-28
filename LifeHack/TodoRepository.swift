@@ -10,10 +10,14 @@ import Foundation
 
 protocol TodoRepositoryProtocol {
     func all() -> [Todo]
+    func save(_ todo: Todo)
 }
 
 class TodoRepository  : TodoRepositoryProtocol{
     func all() -> [Todo] {
         return [Todo(body: "bodybodybody"),Todo(body: "bodybodybody")]
+    }
+    
+    func save(_ todo: Todo) {
     }
 }
