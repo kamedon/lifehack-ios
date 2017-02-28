@@ -34,14 +34,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DU6-3a-MRY">
-                                                    <rect key="frame" x="263" y="0.0" width="80" height="43.5"/>
+                                                    <rect key="frame" x="283" y="0.0" width="60" height="43.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="80" id="Pzl-V5-Mbb"/>
+                                                        <constraint firstAttribute="width" constant="60" id="Pzl-V5-Mbb"/>
                                                     </constraints>
                                                     <state key="normal" title="完了"/>
                                                 </button>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4T4-PR-HV0">
-                                                    <rect key="frame" x="0.0" y="0.0" width="263" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="283" height="43.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
