@@ -12,6 +12,15 @@ import UIKit
 class TodoTableCell: UITableViewCell {
     
     @IBOutlet weak var bodyText: UITextField!
-    @IBOutlet weak var btnComplate: UIButton!
+    
+    @IBOutlet weak var btnComplete: UIButton!
+    
+    var onComplete: (() -> ())?
 
+    @IBAction func tappedComplete(_ sender: UIButton) {
+        if(onComplete != nil){
+            onComplete?()
+        }
+    }
+    
 }

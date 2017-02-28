@@ -17,10 +17,8 @@ class TodoViewController: UIViewController, TodoView {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = TodoPresenter(view: self, useCase: TodoUseCase(repository: TodoRepository()))
+        presenter.bindTodoTableView(tableView)
         presenter.load()
-        tableView.delegate = presenter
-        tableView.dataSource = presenter
-        
         // Do any additional setup after loading the view.
     }
 

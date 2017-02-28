@@ -39,6 +39,9 @@
                                                         <constraint firstAttribute="width" constant="60" id="Pzl-V5-Mbb"/>
                                                     </constraints>
                                                     <state key="normal" title="完了"/>
+                                                    <connections>
+                                                        <action selector="tappedComplete:" destination="fde-1z-yR0" eventType="touchUpInside" id="yDK-iB-rZq"/>
+                                                    </connections>
                                                 </button>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4T4-PR-HV0">
                                                     <rect key="frame" x="0.0" y="0.0" width="283" height="43.5"/>
@@ -59,7 +62,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="bodyText" destination="4T4-PR-HV0" id="dxi-HM-D6j"/>
-                                            <outlet property="btnComplate" destination="DU6-3a-MRY" id="ryD-m8-BXF"/>
+                                            <outlet property="btnComplete" destination="DU6-3a-MRY" id="Jay-wZ-zxO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

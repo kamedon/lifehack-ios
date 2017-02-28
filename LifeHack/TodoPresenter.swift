@@ -13,6 +13,7 @@ protocol TodoView {
 }
 
 class TodoPresenter: NSObject, UITableViewDataSource, UITableViewDelegate {
+    weak var tableView: UITableView!
     
     let useCase: TodoUseCase
     let view : TodoView
@@ -24,8 +25,15 @@ class TodoPresenter: NSObject, UITableViewDataSource, UITableViewDelegate {
         self.view = view
     }
     
+    func bindTodoTableView(_ tableView: UITableView) {
+        self.tableView = tableView
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
     func load() {
-       todoList = useCase.list()
+        todoList = useCase.list()
+        tableView.reloadData()
     }
     
     func tableView(_ table: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,6 +43,11 @@ class TodoPresenter: NSObject, UITableViewDataSource, UITableViewDelegate {
     func tableView(_ table: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: "todoCell", for: indexPath) as! TodoTableCell
         cell.bodyText.text = todoList[indexPath.row].body
+        cell.onComplete = {
+            self.todoList.remove(at: indexPath.row)
+            table.reloadData()
+        }
         return cell
     }
 }
+
