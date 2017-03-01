@@ -2,14 +2,22 @@ PODS:
   - R.swift (3.2.0):
     - R.swift.Library (~> 3.0.2)
   - R.swift.Library (3.0.2)
+  - Realm (2.4.3):
+    - Realm/Headers (= 2.4.3)
+  - Realm/Headers (2.4.3)
+  - RealmSwift (2.4.3):
+    - Realm (= 2.4.3)
 
 DEPENDENCIES:
   - R.swift
+  - RealmSwift
 
 SPEC CHECKSUMS:
   R.swift: 207a372a2b5977caef440c696a368009460641d1
   R.swift.Library: fbdec16c9802ad104fc1ba53415dc190e6ec5c73
+  Realm: e08d60b0048ccccd3949c8c28a92c4db5712d7e9
+  RealmSwift: 30d49739ccb3385d201242736ca4dda56aec9dfc
 
-PODFILE CHECKSUM: 9c0078c8e0a4a002a4d34e8443d0289f3accac63
+PODFILE CHECKSUM: 1f45972312b25277ba0c6115ad6f50aa822218cb
 
 COCOAPODS: 1.2.0

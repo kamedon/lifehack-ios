@@ -15,12 +15,16 @@ class TodoTableCell: UITableViewCell {
     
     @IBOutlet weak var btnComplete: UIButton!
     
-    var onComplete: (() -> ())?
-
+    var onComplete: ((UIButton) -> ())?
+    
+    var onBodyEditingDidEnd: ((UITextField) -> ())?
+    
     @IBAction func tappedComplete(_ sender: UIButton) {
-        if(onComplete != nil){
-            onComplete?()
-        }
+        onComplete?(sender)
     }
     
+    @IBAction func bodyEditingDidEnd(_ sender: UITextField) {
+        print("bodyEditingDidEnd")
+        onBodyEditingDidEnd?(sender)
+    }
 }
