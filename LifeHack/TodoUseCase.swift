@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RealmSwift
 
 class TodoUseCase {
     let repository : TodoRepositoryProtocol
@@ -15,12 +16,21 @@ class TodoUseCase {
         self.repository = repository
     }
     
-    func list() -> [Todo] {
+    func all() -> Results<Todo> {
         return repository.all()
     }
     
-    func save(_ todo: Todo) {
-        repository.save(todo)
+    func update(_ todo: Todo,data: TodoData) {
+        repository.update(todo, data: data)
     }
+    
+    func insert(_ todo: TodoData) {
+        repository.insert(todo)
+    }
+    
+    func delete(_ todo: Todo) {
+        repository.delete(todo)
+    }
+    
     
 }

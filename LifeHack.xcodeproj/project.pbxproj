@@ -157,7 +157,6 @@
 				E290944F1E63A8EA008F94D4 /* presentation */,
 				E290944E1E63A8E3008F94D4 /* Infra */,
 				E290944A1E63A824008F94D4 /* domain */,
-				E29094491E63A80C008F94D4 /* ui */,
 				E29094151E63A10B008F94D4 /* AppDelegate.swift */,
 				E29094171E63A10B008F94D4 /* ViewController.swift */,
 				E290945C1E64F778008F94D4 /* R.generated.swift */,
@@ -204,16 +203,6 @@
 			name = alarm;
 			sourceTree = "<group>";
 		};
-		E29094491E63A80C008F94D4 /* ui */ = {
-			isa = PBXGroup;
-			children = (
-				E29094581E6454DD008F94D4 /* view */,
-				E29094441E63A368008F94D4 /* alarm */,
-				E29094431E63A359008F94D4 /* todo */,
-			);
-			name = ui;
-			sourceTree = "<group>";
-		};
 		E290944A1E63A824008F94D4 /* domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +230,9 @@
 		E290944F1E63A8EA008F94D4 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				E29094581E6454DD008F94D4 /* view */,
+				E29094441E63A368008F94D4 /* alarm */,
+				E29094431E63A359008F94D4 /* todo */,
 			);
 			name = presentation;
 			sourceTree = "<group>";

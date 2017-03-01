@@ -20,14 +20,11 @@ class TodoTableCell: UITableViewCell {
     var onBodyEditingDidEnd: ((UITextField) -> ())?
     
     @IBAction func tappedComplete(_ sender: UIButton) {
-        if(onComplete != nil){
-            onComplete?(sender)
-        }
+        onComplete?(sender)
     }
     
     @IBAction func bodyEditingDidEnd(_ sender: UITextField) {
-        if(onBodyEditingDidEnd != nil) {
-            onBodyEditingDidEnd?(sender)
-        }
+        print("bodyEditingDidEnd")
+        onBodyEditingDidEnd?(sender)
     }
 }
