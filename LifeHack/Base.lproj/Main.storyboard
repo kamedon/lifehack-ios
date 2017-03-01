@@ -49,7 +49,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="bodyEditingDidEnd:" destination="fde-1z-yR0" eventType="editingDidEnd" id="ru5-Zg-edg"/>
+                                                        <action selector="bodyDidEndOnExit:" destination="fde-1z-yR0" eventType="editingDidEndOnExit" id="te1-Mw-9kU"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>

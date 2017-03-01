@@ -55,7 +55,7 @@ class TodoPresenter: NSObject, UITableViewDataSource, UITableViewDelegate {
             self.useCase.delete(todo)
             self.load()
         }
-        cell.onBodyEditingDidEnd = { sender in
+        cell.onBodyDidEndOnExit = { sender in
             let data = TodoData(body: sender.text!, state: todo.stateAsEnum)
             if isFirst {
                 self.useCase.insert(data)
