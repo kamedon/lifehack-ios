@@ -33,7 +33,7 @@ class TodoPresenter: NSObject, UITableViewDataSource, UITableViewDelegate {
     }
     
     func load() {
-        todoList = useCase.all()
+        todoList = useCase.all(state: Todo.State.ISSUE)
         tableView.reloadData()
     }
     
@@ -52,7 +52,7 @@ class TodoPresenter: NSObject, UITableViewDataSource, UITableViewDelegate {
             cell.btnComplete.isHidden = true
         }
         cell.onComplete = { sender in
-            self.useCase.delete(todo)
+            self.useCase.update(todo, data: TodoData(body: cell.bodyText.text!, state: Todo.State.DONE))
             self.load()
         }
         cell.onBodyDidEndOnExit = { sender in

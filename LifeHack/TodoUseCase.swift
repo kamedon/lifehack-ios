@@ -16,8 +16,8 @@ class TodoUseCase {
         self.repository = repository
     }
     
-    func all() -> Results<Todo> {
-        return repository.all()
+    func all(state: Todo.State) -> Results<Todo> {
+        return repository.all(state: state)
     }
     
     func update(_ todo: Todo,data: TodoData) {

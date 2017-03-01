@@ -10,16 +10,17 @@ import Foundation
 import RealmSwift
 
 protocol TodoRepositoryProtocol {
-    func all() -> Results<Todo>
+    func all(state: Todo.State) -> Results<Todo>
     func insert(_ data: TodoData)
     func update(_ todo: Todo,data: TodoData)
     func delete(_ todo: Todo)
 }
 
 class TodoRepository  : TodoRepositoryProtocol{
-    func all() -> Results<Todo> {
+    func all(state: Todo.State) -> Results<Todo> {
         let realm = try! Realm()
-        return realm.objects(Todo.self)
+        print("state = '\(state.rawValue)'")
+        return realm.objects(Todo.self).filter("state = '\(state.rawValue)'")
     }
     
     func insert(_ data: TodoData) {
