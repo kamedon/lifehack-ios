@@ -339,7 +339,7 @@
 				TargetAttributes = {
 					E29094111E63A10B008F94D4 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = NF7A62U59S;
+						DevelopmentTeam = 7TEG929Y26;
 						ProvisioningStyle = Automatic;
 					};
 					E29094251E63A10C008F94D4 = {
@@ -721,10 +721,11 @@
 			baseConfigurationReference = 6731E8ACD5E7E4DC397CE522 /* Pods-LifeHack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NF7A62U59S;
+				DEVELOPMENT_TEAM = 7TEG929Y26;
 				INFOPLIST_FILE = LifeHack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kamedon.LifeHack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kamedon39.LifeHack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -735,10 +736,11 @@
 			baseConfigurationReference = DC92F3F666EEC1F4E7BF31C1 /* Pods-LifeHack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NF7A62U59S;
+				DEVELOPMENT_TEAM = 7TEG929Y26;
 				INFOPLIST_FILE = LifeHack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kamedon.LifeHack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kamedon39.LifeHack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
