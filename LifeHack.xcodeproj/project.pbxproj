@@ -24,7 +24,7 @@
 		E29094541E63C7A3008F94D4 /* TodoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094531E63C7A3008F94D4 /* TodoPresenter.swift */; };
 		E29094571E63C945008F94D4 /* TodoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094561E63C945008F94D4 /* TodoUseCase.swift */; };
 		E290945A1E6454E9008F94D4 /* TodoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094591E6454E9008F94D4 /* TodoTableCell.swift */; };
-		E290945D1E64F778008F94D4 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290945C1E64F778008F94D4 /* R.generated.swift */; };
+		E2F663491E6E34910015AD59 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F663481E6E34910015AD59 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +73,7 @@
 		E29094531E63C7A3008F94D4 /* TodoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoPresenter.swift; sourceTree = "<group>"; };
 		E29094561E63C945008F94D4 /* TodoUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoUseCase.swift; sourceTree = "<group>"; };
 		E29094591E6454E9008F94D4 /* TodoTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTableCell.swift; sourceTree = "<group>"; };
-		E290945C1E64F778008F94D4 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		E2F663481E6E34910015AD59 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		F8CCA79F9F10B05EDFF52E3E /* Pods-LifeHackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeHackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeHackUITests/Pods-LifeHackUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,7 +159,7 @@
 				E290944A1E63A824008F94D4 /* domain */,
 				E29094151E63A10B008F94D4 /* AppDelegate.swift */,
 				E29094171E63A10B008F94D4 /* ViewController.swift */,
-				E290945C1E64F778008F94D4 /* R.generated.swift */,
+				E2F663481E6E34910015AD59 /* R.generated.swift */,
 				E29094191E63A10C008F94D4 /* Main.storyboard */,
 				E290941C1E63A10C008F94D4 /* Assets.xcassets */,
 				E290941E1E63A10C008F94D4 /* LaunchScreen.storyboard */,
@@ -269,12 +269,12 @@
 			buildConfigurationList = E290943A1E63A10C008F94D4 /* Build configuration list for PBXNativeTarget "LifeHack" */;
 			buildPhases = (
 				9FDABE9E4E447F98474F22AC /* [CP] Check Pods Manifest.lock */,
+				E290945B1E64F721008F94D4 /* Run Script */,
 				E290940E1E63A10B008F94D4 /* Sources */,
 				E290940F1E63A10B008F94D4 /* Frameworks */,
 				E29094101E63A10B008F94D4 /* Resources */,
 				B8871F9A5FDC1C0813DFF6C3 /* [CP] Embed Pods Frameworks */,
 				6400669F47628333A06AC873 /* [CP] Copy Pods Resources */,
-				E290945B1E64F721008F94D4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -524,13 +524,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeHack/Pods-LifeHack-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E290945B1E64F721008F94D4 /* ShellScript */ = {
+		E290945B1E64F721008F94D4 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,7 +567,7 @@
 				E29094541E63C7A3008F94D4 /* TodoPresenter.swift in Sources */,
 				E29094461E63A39A008F94D4 /* AlarmViewController.swift in Sources */,
 				E290945A1E6454E9008F94D4 /* TodoTableCell.swift in Sources */,
-				E290945D1E64F778008F94D4 /* R.generated.swift in Sources */,
+				E2F663491E6E34910015AD59 /* R.generated.swift in Sources */,
 				E290944D1E63A84D008F94D4 /* Todo.swift in Sources */,
 				E29094521E63A928008F94D4 /* TodoRepository.swift in Sources */,
 			);

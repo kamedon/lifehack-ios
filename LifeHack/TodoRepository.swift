@@ -19,20 +19,17 @@ protocol TodoRepositoryProtocol {
 class TodoRepository  : TodoRepositoryProtocol{
     func all(state: Todo.State) -> Results<Todo> {
         let realm = try! Realm()
-        print("state = '\(state.rawValue)'")
         return realm.objects(Todo.self).filter("state = '\(state.rawValue)'")
     }
     
     func insert(_ data: TodoData) {
-        let realm = try! Realm()
-        try! realm.write {
+        realm{ realm in
             realm.create(Todo.self, value: ["body": data.body, "state": data.state.rawValue])
         }
     }
     
     func update(_ todo: Todo, data: TodoData)  {
-        let realm = try! Realm()
-        try! realm.write {
+        realm { realm in
             todo.body = data.body
             todo.stateAsEnum = data.state
             realm.add(todo, update: true)
@@ -40,9 +37,15 @@ class TodoRepository  : TodoRepositoryProtocol{
     }
     
     func delete(_ todo: Todo) {
+        realm{ realm in
+             realm.delete(todo)
+        }
+    }
+    
+    private func realm(_ run: (Realm) -> Void) {
         let realm = try! Realm()
         try! realm.write {
-            realm.delete(todo)
+            run(realm)
         }
     }
     
