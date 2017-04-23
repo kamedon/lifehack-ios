@@ -121,9 +121,64 @@
                     <view key="view" contentMode="scaleToFill" id="Wvp-Ag-40L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7oE-0M-UfL">
+                                <rect key="frame" x="16" y="20" width="343" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" id="40m-FT-rPl" customClass="CategoryTableCell" customModule="LifeHack" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="40m-FT-rPl" id="ZMV-0r-UaB">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2m6-QR-qd9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rhn-Vs-C10">
+                                                            <rect key="frame" x="0.0" y="0.0" width="283" height="43.5"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tqg-94-9Fj">
+                                                            <rect key="frame" x="283" y="0.0" width="60" height="43.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="60" id="LXM-TS-gZo"/>
+                                                            </constraints>
+                                                            <state key="normal" title="登録"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="2m6-QR-qd9" secondAttribute="bottom" id="OsB-hz-Lm6"/>
+                                                <constraint firstItem="2m6-QR-qd9" firstAttribute="leading" secondItem="ZMV-0r-UaB" secondAttribute="leading" id="j7l-Ws-tNi"/>
+                                                <constraint firstItem="2m6-QR-qd9" firstAttribute="top" secondItem="ZMV-0r-UaB" secondAttribute="top" id="oOh-Xi-cc4"/>
+                                                <constraint firstAttribute="trailing" secondItem="2m6-QR-qd9" secondAttribute="trailing" id="v1K-T5-MI7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameText" destination="rhn-Vs-C10" id="tOL-E3-SyF"/>
+                                            <outlet property="registerBtn" destination="Tqg-94-9Fj" id="IEu-j1-hbL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZFf-RA-eiV" firstAttribute="top" secondItem="7oE-0M-UfL" secondAttribute="bottom" id="76h-jG-ch6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7oE-0M-UfL" secondAttribute="trailing" id="YKv-26-nLf"/>
+                            <constraint firstItem="7oE-0M-UfL" firstAttribute="top" secondItem="tGe-gc-d55" secondAttribute="bottom" id="jsN-ef-y5S"/>
+                            <constraint firstItem="7oE-0M-UfL" firstAttribute="leading" secondItem="Wvp-Ag-40L" secondAttribute="leadingMargin" id="mvl-0C-LQ3"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="pKf-Ig-rux"/>
+                    <connections>
+                        <outlet property="tableView" destination="7oE-0M-UfL" id="Xo3-fm-sB1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jXh-bT-jGB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,11 +8,16 @@
 
 import UIKit
 
-class CategoryViewController: UIViewController {
-
+class CategoryViewController: UIViewController, CategoryView {
+    @IBOutlet weak var tableView: UITableView!
+    
+    var presenter : CategoryPresenter!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        presenter = CategoryPresenter(view: self, useCase: CategoryUseCase(repository: CategoryRepository()))
+        presenter.bind(tableView)
+        presenter.load()
         // Do any additional setup after loading the view.
     }
 

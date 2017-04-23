@@ -25,6 +25,11 @@
 		E29094571E63C945008F94D4 /* TodoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094561E63C945008F94D4 /* TodoUseCase.swift */; };
 		E290945A1E6454E9008F94D4 /* TodoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094591E6454E9008F94D4 /* TodoTableCell.swift */; };
 		E29159281EAC38DF00D1A1C1 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29159271EAC38DF00D1A1C1 /* CategoryViewController.swift */; };
+		E291592A1EAC3AD800D1A1C1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29159291EAC3AD800D1A1C1 /* Category.swift */; };
+		E291592C1EAC3F1B00D1A1C1 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291592B1EAC3F1B00D1A1C1 /* CategoryRepository.swift */; };
+		E291592E1EAC416D00D1A1C1 /* CategoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291592D1EAC416D00D1A1C1 /* CategoryTableCell.swift */; };
+		E29159301EAC41E900D1A1C1 /* CategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291592F1EAC41E900D1A1C1 /* CategoryPresenter.swift */; };
+		E29159321EAC433C00D1A1C1 /* CategoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29159311EAC433C00D1A1C1 /* CategoryUseCase.swift */; };
 		E2F663491E6E34910015AD59 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F663481E6E34910015AD59 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +80,11 @@
 		E29094561E63C945008F94D4 /* TodoUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoUseCase.swift; sourceTree = "<group>"; };
 		E29094591E6454E9008F94D4 /* TodoTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTableCell.swift; sourceTree = "<group>"; };
 		E29159271EAC38DF00D1A1C1 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		E29159291EAC3AD800D1A1C1 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		E291592B1EAC3F1B00D1A1C1 /* CategoryRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
+		E291592D1EAC416D00D1A1C1 /* CategoryTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableCell.swift; sourceTree = "<group>"; };
+		E291592F1EAC41E900D1A1C1 /* CategoryPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPresenter.swift; sourceTree = "<group>"; };
+		E29159311EAC433C00D1A1C1 /* CategoryUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryUseCase.swift; sourceTree = "<group>"; };
 		E2F663481E6E34910015AD59 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		F8CCA79F9F10B05EDFF52E3E /* Pods-LifeHackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeHackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeHackUITests/Pods-LifeHackUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,6 +204,7 @@
 				E29094471E63A3AC008F94D4 /* TodoViewController.swift */,
 				E29094531E63C7A3008F94D4 /* TodoPresenter.swift */,
 				E29159271EAC38DF00D1A1C1 /* CategoryViewController.swift */,
+				E291592F1EAC41E900D1A1C1 /* CategoryPresenter.swift */,
 			);
 			name = todo;
 			sourceTree = "<group>";
@@ -218,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				E290944C1E63A84D008F94D4 /* Todo.swift */,
+				E29159291EAC3AD800D1A1C1 /* Category.swift */,
 			);
 			name = entity;
 			sourceTree = "<group>";
@@ -244,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				E29094511E63A928008F94D4 /* TodoRepository.swift */,
+				E291592B1EAC3F1B00D1A1C1 /* CategoryRepository.swift */,
 			);
 			name = repository;
 			sourceTree = "<group>";
@@ -252,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				E29094561E63C945008F94D4 /* TodoUseCase.swift */,
+				E29159311EAC433C00D1A1C1 /* CategoryUseCase.swift */,
 			);
 			name = usecase;
 			sourceTree = "<group>";
@@ -260,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				E29094591E6454E9008F94D4 /* TodoTableCell.swift */,
+				E291592D1EAC416D00D1A1C1 /* CategoryTableCell.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -564,16 +579,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29094481E63A3AC008F94D4 /* TodoViewController.swift in Sources */,
+				E29159301EAC41E900D1A1C1 /* CategoryPresenter.swift in Sources */,
 				E29094181E63A10B008F94D4 /* ViewController.swift in Sources */,
 				E29094161E63A10B008F94D4 /* AppDelegate.swift in Sources */,
 				E29094571E63C945008F94D4 /* TodoUseCase.swift in Sources */,
 				E29094541E63C7A3008F94D4 /* TodoPresenter.swift in Sources */,
+				E291592C1EAC3F1B00D1A1C1 /* CategoryRepository.swift in Sources */,
+				E29159321EAC433C00D1A1C1 /* CategoryUseCase.swift in Sources */,
+				E291592E1EAC416D00D1A1C1 /* CategoryTableCell.swift in Sources */,
 				E29094461E63A39A008F94D4 /* AlarmViewController.swift in Sources */,
 				E290945A1E6454E9008F94D4 /* TodoTableCell.swift in Sources */,
 				E2F663491E6E34910015AD59 /* R.generated.swift in Sources */,
 				E290944D1E63A84D008F94D4 /* Todo.swift in Sources */,
 				E29159281EAC38DF00D1A1C1 /* CategoryViewController.swift in Sources */,
 				E29094521E63A928008F94D4 /* TodoRepository.swift in Sources */,
+				E291592A1EAC3AD800D1A1C1 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
