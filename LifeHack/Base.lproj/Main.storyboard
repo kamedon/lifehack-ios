@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bq8-It-XXT">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bq8-It-XXT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,37 +30,39 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fde-1z-yR0" id="9bj-tR-ovm">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DU6-3a-MRY">
-                                                    <rect key="frame" x="283" y="0.0" width="60" height="43.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="60" id="Pzl-V5-Mbb"/>
-                                                    </constraints>
-                                                    <state key="normal" title="完了"/>
-                                                    <connections>
-                                                        <action selector="tappedComplete:" destination="fde-1z-yR0" eventType="touchUpInside" id="yDK-iB-rZq"/>
-                                                    </connections>
-                                                </button>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4T4-PR-HV0">
-                                                    <rect key="frame" x="0.0" y="0.0" width="283" height="43.5"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                    <connections>
-                                                        <action selector="bodyDidEndOnExit:" destination="fde-1z-yR0" eventType="editingDidEndOnExit" id="te1-Mw-9kU"/>
-                                                    </connections>
-                                                </textField>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPA-Ap-6Dx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4T4-PR-HV0">
+                                                            <rect key="frame" x="0.0" y="0.0" width="283" height="43.5"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <connections>
+                                                                <action selector="bodyDidEndOnExit:" destination="fde-1z-yR0" eventType="editingDidEndOnExit" id="te1-Mw-9kU"/>
+                                                            </connections>
+                                                        </textField>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DU6-3a-MRY">
+                                                            <rect key="frame" x="283" y="0.0" width="60" height="43.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="60" id="Pzl-V5-Mbb"/>
+                                                            </constraints>
+                                                            <state key="normal" title="完了"/>
+                                                            <connections>
+                                                                <action selector="tappedComplete:" destination="fde-1z-yR0" eventType="touchUpInside" id="yDK-iB-rZq"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="4T4-PR-HV0" firstAttribute="leading" secondItem="9bj-tR-ovm" secondAttribute="leading" id="MuS-b5-pxd"/>
-                                                <constraint firstAttribute="trailing" secondItem="DU6-3a-MRY" secondAttribute="trailing" id="dqG-Uq-mnk"/>
-                                                <constraint firstItem="DU6-3a-MRY" firstAttribute="leading" secondItem="4T4-PR-HV0" secondAttribute="trailing" id="fls-xP-4sp"/>
-                                                <constraint firstItem="4T4-PR-HV0" firstAttribute="top" secondItem="9bj-tR-ovm" secondAttribute="top" id="hHS-v5-B3h"/>
-                                                <constraint firstAttribute="bottom" secondItem="DU6-3a-MRY" secondAttribute="bottom" id="jp0-go-l6U"/>
-                                                <constraint firstItem="DU6-3a-MRY" firstAttribute="top" secondItem="9bj-tR-ovm" secondAttribute="top" id="obb-zU-O24"/>
-                                                <constraint firstAttribute="bottom" secondItem="4T4-PR-HV0" secondAttribute="bottom" id="zca-i9-QD6"/>
+                                                <constraint firstAttribute="trailing" secondItem="JPA-Ap-6Dx" secondAttribute="trailing" id="6HX-Zc-O6P"/>
+                                                <constraint firstItem="JPA-Ap-6Dx" firstAttribute="leading" secondItem="9bj-tR-ovm" secondAttribute="leading" id="JhG-pD-AKN"/>
+                                                <constraint firstItem="JPA-Ap-6Dx" firstAttribute="top" secondItem="9bj-tR-ovm" secondAttribute="top" id="Tww-8i-l5B"/>
+                                                <constraint firstAttribute="bottom" secondItem="JPA-Ap-6Dx" secondAttribute="bottom" id="j0K-k5-2CW"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -108,10 +110,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
-        <!--Alarm View Controller-->
+        <!--Category View Controller-->
         <scene sceneID="EpP-9o-D02">
             <objects>
-                <viewController id="lty-eR-7Bd" customClass="AlarmViewController" customModule="LifeHack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lty-eR-7Bd" customClass="CategoryViewController" customModule="LifeHack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tGe-gc-d55"/>
                         <viewControllerLayoutGuide type="bottom" id="ZFf-RA-eiV"/>

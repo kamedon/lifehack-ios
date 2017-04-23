@@ -24,6 +24,7 @@
 		E29094541E63C7A3008F94D4 /* TodoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094531E63C7A3008F94D4 /* TodoPresenter.swift */; };
 		E29094571E63C945008F94D4 /* TodoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094561E63C945008F94D4 /* TodoUseCase.swift */; };
 		E290945A1E6454E9008F94D4 /* TodoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29094591E6454E9008F94D4 /* TodoTableCell.swift */; };
+		E29159281EAC38DF00D1A1C1 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29159271EAC38DF00D1A1C1 /* CategoryViewController.swift */; };
 		E2F663491E6E34910015AD59 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F663481E6E34910015AD59 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		E29094531E63C7A3008F94D4 /* TodoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoPresenter.swift; sourceTree = "<group>"; };
 		E29094561E63C945008F94D4 /* TodoUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoUseCase.swift; sourceTree = "<group>"; };
 		E29094591E6454E9008F94D4 /* TodoTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTableCell.swift; sourceTree = "<group>"; };
+		E29159271EAC38DF00D1A1C1 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		E2F663481E6E34910015AD59 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		F8CCA79F9F10B05EDFF52E3E /* Pods-LifeHackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeHackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeHackUITests/Pods-LifeHackUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,6 +193,7 @@
 			children = (
 				E29094471E63A3AC008F94D4 /* TodoViewController.swift */,
 				E29094531E63C7A3008F94D4 /* TodoPresenter.swift */,
+				E29159271EAC38DF00D1A1C1 /* CategoryViewController.swift */,
 			);
 			name = todo;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 				E290945A1E6454E9008F94D4 /* TodoTableCell.swift in Sources */,
 				E2F663491E6E34910015AD59 /* R.generated.swift in Sources */,
 				E290944D1E63A84D008F94D4 /* Todo.swift in Sources */,
+				E29159281EAC38DF00D1A1C1 /* CategoryViewController.swift in Sources */,
 				E29094521E63A928008F94D4 /* TodoRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
